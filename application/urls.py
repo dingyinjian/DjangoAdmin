@@ -37,7 +37,8 @@ urlpatterns = [
     path('job/crontab/', include('app_crontab.urls')),
     path('tool/', include('app_monitor.urls')),
     path('link/', include('app_links.urls')),
-    path('api/',include('app_upload.urls'))
+    path('api/',include('app_upload.urls')),
+    path('product/', include('app_product.urls')),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
